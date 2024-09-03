@@ -37,7 +37,6 @@ async function run() {
         // Send a ping to confirm a successful connection
         const bookCollections = client.db("BookInventory").collection("Books");
 
-
         // insert a book to db: Post Method
         app.post("/upload-book", async (req, res) => {
             const data = req.body;
